@@ -1,0 +1,34 @@
+.box1 {
+  vertical-align: top;
+  padding-top: 20px;
+}
+
+@font-face {
+  font-family: Abibas;
+  src: url(../../assets/Abibas.ttf);
+}
+
+.nav-item {
+  font-family: Abibas;
+  font-size: 25px;
+}
+
+.buttonLogin {
+  border-radius: 5px;
+  background-color: #e7d2ae;
+  border: none;
+  width: 100%;
+  color: black;
+  font-size: large;
+  margin-right: 30px;
+}
+
+.buttonLogin:hover {
+  background-color: #b8a584;
+}
+
+.navbar-brand img {
+  height: 100px;
+  margin-left: 15px;
+}
+

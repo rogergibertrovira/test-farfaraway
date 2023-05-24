@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent {
+  userType: number = 1;
 
+  onChange(ev:any) {
+    this.userType = ev.target.value;
+  }
 }
