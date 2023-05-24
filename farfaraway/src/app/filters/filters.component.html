@@ -1,1 +1,152 @@
-<p>filters works!</p>
+<div class="container box1 shadow p-3 mb-5 bg-body rounded">
+  <!-- RATING -->
+  <div class="row">
+    <div class="btn-group-vertical">
+      <h5>Rating:</h5>
+      <div class="form-check">
+        <input
+          class="form-check-input checkbox1"
+          type="checkbox"
+          value=""
+          id="rating5"
+        />
+        <label class="form-check-label" for="rating5">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input checkbox1"
+          value=""
+          type="checkbox"
+          id="rating4"
+        />
+        <label class="form-check-label" for="rating4">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input checkbox1"
+          value=""
+          type="checkbox"
+          id="rating3"
+        />
+        <label class="form-check-label" for="rating3">
+          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+          ><i class="bi bi-star-fill"></i>
+        </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input checkbox1"
+          value=""
+          type="checkbox"
+          id="rating2"
+        />
+        <label class="form-check-label" for="rating2">
+          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input checkbox1"
+          value=""
+          type="checkbox"
+          id="rating1"
+        />
+        <label class="form-check-label" for="rating1">
+          <i class="bi bi-star-fill"></i>
+        </label>
+      </div>
+    </div>
+  </div>
+  <hr />
+
+  <!-- PRICE -->
+  <div class="row g-2">
+    <h5>Price:</h5>
+    <div class="col-md">
+      <div class="form-floating">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingInputGrid"
+          placeholder="EUR"
+          value=""
+        />
+        <label for="floatingInputGrid">From</label>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="form-floating">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingInputGrid"
+          placeholder="EUR"
+          value=""
+        />
+        <label for="floatingInputGrid">To</label>
+      </div>
+    </div>
+  </div>
+  <hr />
+
+  <!-- THEMES -->
+  <div class="row">
+    <h5>Themes:</h5>
+    <div class="mat-typography mat-app-background">
+      <mat-form-field>
+        <mat-label>Themes</mat-label>
+        <mat-select [formControl]="themes" multiple>
+          <mat-option *ngFor="let theme of themesList" [value]="theme">{{
+            theme
+          }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+  <hr />
+
+  <!-- SPECIAL DATES -->
+  <div class="row">
+    <h5>Special Dates:</h5>
+    <div class="mat-typography mat-app-background">
+      <mat-form-field>
+        <mat-label>Special Dates</mat-label>
+        <mat-select [formControl]="specialDates" multiple>
+          <mat-option
+            *ngFor="let specialDate of specialDatesList"
+            [value]="specialDate"
+            >{{ specialDate }}</mat-option
+          >
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+  <hr />
+
+  <!-- SPECIAL OFFERS -->
+  <div class="row">
+    <div class="btn-group-vertical">
+      <h5>Special offers:</h5>
+      <div class="form-check">
+        <input
+          class="form-check-input checkbox1"
+          value=""
+          type="checkbox"
+          id="lastoptions"
+        />
+        <label class="form-check-label" for="lastoptions"> Last Options </label>
+      </div>
+    </div>
+  </div>
+</div>
