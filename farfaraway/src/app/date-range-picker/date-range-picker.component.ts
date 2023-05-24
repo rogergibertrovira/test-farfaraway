@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {MatNativeDateModule} from '@angular/material/core';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
+/** @title Basic date range picker */
 @Component({
-  selector: 'app-date-range-picker',
-  templateUrl: './date-range-picker.component.html',
-  styleUrls: ['./date-range-picker.component.css']
+  selector: 'date-range-picker',
+  templateUrl: 'date-range-picker.component.html',
+  standalone: true,
+  imports: [MatFormFieldModule, MatDatepickerModule, MatNativeDateModule],
 })
-export class DateRangePickerComponent {
+export class DateRangePickerComponent {}
 
-}

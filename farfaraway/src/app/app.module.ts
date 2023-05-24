@@ -34,7 +34,6 @@ import { SearchOfferComponent } from './search-offer/search-offer.component';
     AppComponent,
     AboutComponent,
     CreateOfferComponent,
-    DateRangePickerComponent,
     EditOfferComponent,
     FiltersComponent,
     FooterComponent,
@@ -61,7 +60,8 @@ import { SearchOfferComponent } from './search-offer/search-offer.component';
     MatFormFieldModule,
     MatSelectModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    DateRangePickerComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
