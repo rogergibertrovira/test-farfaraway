@@ -1,1 +1,39 @@
-<p>offer-card works!</p>
+<div class="container box1">
+  <div class="row">
+    <div class="col-12 col-lg-6 col1">
+      <a href="/offer-page">
+        <div class="card mb-3 hover-zoom">
+          <div class="img-offer">
+            <img
+              class="card-img-top w-100"
+              src="../assets/Hotel1.jpg"
+              alt="Card image cap"
+            />
+            <div class="top-right shadow rounded">
+              <countdown
+                class="countdown"
+                [config]="{ leftTime: 3600 }"
+              ></countdown>
+            </div>
+          </div>
+          <div class="card-body row">
+            <div class="col-8">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+            <div class="col-4">
+              <button type="button" class="btn btn-primary">500€ /pers.</button>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

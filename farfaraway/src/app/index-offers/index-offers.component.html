@@ -1,1 +1,25 @@
-<p>index-offers works!</p>
+<app-search-offer></app-search-offer>
+<div class="container-left">
+  <div class="shadow rounded map">
+    <google-map [center]="center" [zoom]="zoom"></google-map>
+  </div>
+  <app-filters class="filters"></app-filters>
+</div>
+<div class="container-fluid">
+  <div class="row ">
+    <div class="col-md-12 col-lg-6">
+      <app-offer-card></app-offer-card>
+    </div>
+    <div class="col-md-12 col-lg-6">
+      <app-offer-card></app-offer-card>
+    </div>
+  </div>
+  <div class="row ">
+    <div class="col-md-12 col-lg-6">
+      <app-offer-card></app-offer-card>
+    </div>
+    <div class="col-md-12 col-lg-6">
+      <app-offer-card></app-offer-card>
+    </div>
+  </div>
+</div>

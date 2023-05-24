@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CountdownModule } from 'ngx-countdown';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -42,7 +44,9 @@ import { SearchOfferComponent } from './search-offer/search-offer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CountdownModule,
+    GoogleMapsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
